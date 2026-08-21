@@ -1,0 +1,11 @@
+- name: varibales and prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+    COURSE:
+    DURATION:
+    TRAINER:
+  tasks: 
+  - name: print variable and prompt
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}, duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
