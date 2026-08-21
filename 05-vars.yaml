@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    COURSE:"Aws devops"
+    COURSE: "Aws devops"
     DURATION: 120HRS
     TRAINER: Rabbani
   tasks:
