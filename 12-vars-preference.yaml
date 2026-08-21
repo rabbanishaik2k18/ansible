@@ -1,0 +1,17 @@
+- name: varibales and argus
+  hosts: local
+  connection: local
+  vars:
+    GREET: play
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: GREET
+    prompt: enter promt values
+    private: false
+  tasks: 
+  - name: print variable and argus
+    vars:
+      GREET: task
+    ansible.builtin.debug:
+      msg: "HEllo form {{ GREET }}"
