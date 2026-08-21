@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    GREET: play
+    GREET: "play"
   vars_files:
   - vars.yaml
   vars_prompt:
@@ -12,6 +12,6 @@
   tasks: 
   - name: print variable and argus
     vars:
-      GREET: task
+      GREET: "task"
     ansible.builtin.debug:
       msg: "HEllo form {{ GREET }}"
