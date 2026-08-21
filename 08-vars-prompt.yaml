@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars_prompt:
-    COURSE:
-    DURATION:
-    TRAINER:
+   COURSE:
+   DURATION:
+   TRAINER:
   tasks: 
   - name: print variable and prompt
     ansible.builtin.debug:
