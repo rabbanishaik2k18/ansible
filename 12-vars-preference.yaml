@@ -1,8 +1,8 @@
 - name: varibales and argus
   hosts: local
   connection: local
-  vars:
-    GREET: "play"
+  # vars:
+  #   GREET: "play"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
