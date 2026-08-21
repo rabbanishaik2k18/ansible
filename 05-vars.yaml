@@ -6,6 +6,6 @@
     DURATION: 120HRS
     TRAINER: Rabbani
   tasks:
-  - name : print variable and values
+  - name: print variable and values
     ansible.builtin.debug:
       msg:"Course is {{ COURSE }}, duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
