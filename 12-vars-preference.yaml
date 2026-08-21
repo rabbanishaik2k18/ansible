@@ -12,6 +12,6 @@
   tasks: 
   - name: print variable and argus
     vars:
-      GREET: "task"
+      GREET: "TASK"
     ansible.builtin.debug:
       msg: "HEllo form {{ GREET }}"
