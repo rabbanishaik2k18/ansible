@@ -7,5 +7,9 @@
     TRAINER: Rabbani
   tasks: #play variable
   - name: print variable and values
+    vars:
+      COURSE: "Ansible"
+      DURATION: 120HRS
+      TRAINER: Rabbani
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
