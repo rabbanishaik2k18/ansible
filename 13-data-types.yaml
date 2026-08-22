@@ -4,15 +4,15 @@
   vars:
     course_name: "Devops with aws"
     duration: 120
-  topics:
-  - linux
-  - shell
-  - ansible
-  - aws
-  tools:
-    ci: jenkins
-    cloud: aws
-    conteraization: docker
+    topics:
+    - linux
+    - shell
+    - ansible
+    - aws
+    tools:
+      ci: jenkins
+      cloud: aws
+      conteraization: docker
   tasks:
   - name : print course information
     ansible.builtin.debug:
