@@ -1,0 +1,13 @@
+- name: variable and ini
+  hosts: local
+  connection: local
+  vars:
+   GREET: play
+  vars_files:
+    course.yaml
+  tasks:
+  - name: print course information
+    vars:
+      GREET: task
+    ansible.builtin.debug:
+      msg: "Hello form {{ GREET }}"
