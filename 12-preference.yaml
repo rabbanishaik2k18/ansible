@@ -3,8 +3,6 @@
   connection: local
   vars:
    GREET: play
-  vars_files:
-    course.yaml
   vars_prompt:
    - name: GREET
      prompt: enter your greet
