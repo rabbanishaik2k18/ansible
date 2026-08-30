@@ -9,11 +9,11 @@
     - ansible
     - shell
     tools:
-    ci: jenkins
-    cloud: aws
-    conteraization: docker
+      ci: jenkins
+      cloud: aws
+      conteraization: docker
     live: true
   tasks:
    - name: print the datatypes
      ansible.builtin.debug:
-       msg: "Course is {{ Course }}, Duration is {{ Duration }}, topics are {{ topics }}, tools is {{ tools }}, is it live?{{ live }},"
+       msg: "Course is {{ Course }}, Duration is {{ Duration }}, topics are {{ topics }}, tools are {{ tools }}, is it live?{{ live }},"
