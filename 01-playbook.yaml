@@ -1,0 +1,5 @@
+- name: ping
+  hosts: web
+  taks:
+   ansible.builtin.debug:
+   - name: ping server
