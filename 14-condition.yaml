@@ -4,7 +4,7 @@
   vars:
   my_number: 15
   task:
-  - name: print the number if it greater than my_number
+  - name: print the number if it greater
     ansible.builtin.debug:
       msg: "Number{{ my_number }} is greater than 10"
     when: my_number > 10
