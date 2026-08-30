@@ -3,7 +3,7 @@
   connection: local
   vars:
     my_number: 15
-  task:
+  tasks:
   - name: print the number if it greater
     ansible.builtin.debug:
       msg: "Number{{ my_number }} is greater than 10"
