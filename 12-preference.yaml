@@ -1,8 +1,6 @@
 - name: variable and ini
   hosts: local
   connection: local
-  vars:
-   GREET: play
   tasks:
   - name: print course information
     ansible.builtin.debug:
