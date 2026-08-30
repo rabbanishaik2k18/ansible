@@ -1,7 +1,7 @@
 - name: first task
   hosts: local
   connection: local
-  taks:
+  tasks:
   - name : play1 and task1
     ansible.bulitin.debug:
       msg : "hello from play1 and task1"
