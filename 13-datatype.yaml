@@ -16,4 +16,4 @@
   tasks:
    - name: print the datatypes
      ansible.builtin.debug:
-       msg: "Course is {{ Course }}, Duration is {{ Duration }}, topics are {{ topics }}, tools is {{ tools }}, is it live?{{ live }},
+       msg: "Course is {{ Course }}, Duration is {{ Duration }}, topics are {{ topics }}, tools is {{ tools }}, is it live?{{ live }},"
