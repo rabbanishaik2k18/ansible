@@ -1,5 +1,5 @@
 - name: ping
   hosts: web
   tasks:
-   ansible.builtin.debug:
-   - name: ping server 
+    ansible.builtin.debug:
+    - name: ping server 
