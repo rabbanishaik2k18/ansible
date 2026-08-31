@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    fruits:" apple, banana, mango"
+    fruits: " apple, banana, mango"
   tasks:
   - name: undefinded veriables
     ansible.builtin.debug:
