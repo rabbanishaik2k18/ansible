@@ -1,14 +1,14 @@
 - name: filters
   hosts: local
   connection: local
-  vars:
-    fruits: " apple, banana, mango"
   tasks:
   - name: undefinded veriables
     ansible.builtin.debug:
       msg: Hello from | {{ default('ramesh')}}
 
   - name: convet string in list
+    vars:
+      fruits: " apple, banana, mango"
     ansible.builtin.debug:
       msg: fruits are "{{ fruits | split(','')}}"
   
