@@ -1,0 +1,7 @@
+- name: filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: undefinded veriables
+    ansible.builtin.debug:
+      msg: "{{ person }}"
