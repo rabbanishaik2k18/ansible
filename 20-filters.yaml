@@ -10,5 +10,5 @@
     vars:
       fruits: " apple, banana, mango"
     ansible.builtin.debug:
-      msg: fruits are "{{ fruits | split(',') }}"
+      msg: Fruits are "{{ fruits | split(',') }}"
   
