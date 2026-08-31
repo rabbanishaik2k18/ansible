@@ -4,7 +4,7 @@
   tasks:
   - name: undefinded veriables
     ansible.builtin.debug:
-      msg: Hello from "{{ person | default('ramesh')}}"
+      msg: "Hello from {{ person | default('ramesh')}}"
 
   - name: convet string in list
     vars:
