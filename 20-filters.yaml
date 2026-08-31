@@ -30,5 +30,9 @@
     ansible.builtin.debug:
       msg: "Course info: {{ course | items2dict }}"
 
-    
+  - name: check Ip is correct
+    vars: 
+      Ip : 234.65.767.788
+    ansible.builtin.debug:
+      msg: "{{ Ip | ansible.utils.ipaddr }}"
   
