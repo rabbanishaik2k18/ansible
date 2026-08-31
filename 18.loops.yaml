@@ -6,8 +6,13 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: installed
+    
+  - name: install packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
-    - gcc
-    - git
-    - mysql
-    - zip
+    - { name: 'gcc', state: 'present' }
+    - { name: 'git', state: 'present' }
+    - { name: 'mysql', state: 'absent' }
+    - { name: 'zip', state: 'absent' }
