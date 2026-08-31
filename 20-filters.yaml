@@ -4,4 +4,4 @@
   tasks:
   - name: undefinded veriables
     ansible.builtin.debug:
-      msg: "{{ person }}"
+      msg: Hello from | {{ default('ramesh')}}
