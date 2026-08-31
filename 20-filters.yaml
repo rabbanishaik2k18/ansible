@@ -19,5 +19,5 @@
         duration: 120
         trainer: rabbani
     ansible.builtin.debug:
-      msg: "Course info: {{ course | dict2item }}"
+      msg: "Course info: {{ course | dict2items }}"
   
