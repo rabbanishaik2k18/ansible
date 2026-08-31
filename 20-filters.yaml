@@ -6,9 +6,8 @@
     ansible.builtin.debug:
       msg: Hello from | {{ default('ramesh')}}
 
+  tasks: 
   - name: convet string in list
-    vars:
-      fruits: " apple, banana, mango"
     ansible.builtin.debug:
-      msg: fruits are "{{ fruits | split(','')}}"
+      msg: fruits are "{{ fruits | split(','') }}"
   
