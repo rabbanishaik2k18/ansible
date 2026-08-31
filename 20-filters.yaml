@@ -9,5 +9,5 @@
   tasks: 
   - name: convet string in list
     ansible.builtin.debug:
-      msg: fruits are "{{ fruits | split(','') }}"
+      msg: fruits are "{{ fruits | split(',') }}"
   
