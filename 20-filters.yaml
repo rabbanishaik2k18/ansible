@@ -8,7 +8,7 @@
 
   - name: convet string in list
     vars:
-      fruits: " apple, banana, mango"
+      fruits: "apple, banana, mango"
     ansible.builtin.debug:
       msg: Fruits are: "{{ fruits | split(',') }}"
   
