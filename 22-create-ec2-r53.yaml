@@ -21,9 +21,9 @@
 
   - name: create ec2
     amazon.aws.ec2_instance:
-    name: "{{ item }}"
-    instance_type: "{{ instance_type }}"
-    image_id: "{{ image_id }}"
-    vpc_subnet_id: "{{ vpc_subnet_id }}"
-    security_group: "{{ sg_id }}"
+      name: "{{ item }}"
+      instance_type: "{{ instance_type }}"
+      image_id: "{{ image_id }}"
+      vpc_subnet_id: "{{ vpc_subnet_id }}"
+      security_group: "{{ sg_id }}"
     loop: "{{ instances }}"
