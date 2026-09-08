@@ -27,3 +27,8 @@
       vpc_subnet_id: "{{ vpc_subnet_id }}"
       security_group: "{{ sg_id }}"
     loop: "{{ instances }}"
+    register: ec2_info
+
+  - name: print the result
+    ansible.builtin.debug:
+      msg: "ec2_info.result "
