@@ -6,6 +6,7 @@
     image_id: ami-0220d79f3f480ecf5
     vpc_subnet_id: subnet-02fef984c3041a40e
     sg_id: sg-0a9372f8a692ed98f
+    zone: awsdevsecops.online
     instances:
     - mysql
     - backend
@@ -32,4 +33,19 @@
   - name: print the result
     ansible.builtin.debug:
       msg: "{{ ec2_info }}"
-    
+
+  - name: print private ip private Ip private ip
+    ansible.builtin.debug:
+      msg: "{{ item.instance[0].private_ip_address }}"
+
+  # - name: create r53
+  #   amazon.aws.route53:
+  #     state: present
+  #     zone: "{{ item.item }}.{{ zone }}"
+  #     record: 
+  #     type: A
+  #     ttl: 1
+  #     value: 
+  #     wait: true
+  #     msg: {{ item.instance[0].private_ip_address }}
+  #   loop: "{{ ec2_info }}"
