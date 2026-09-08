@@ -37,6 +37,7 @@
   - name: print private ip private Ip private ip
     ansible.builtin.debug:
       msg: "{{ item.instance[0].private_ip_address }}"
+    loop: "{{ ec2_info.result }}"
 
   # - name: create r53
   #   amazon.aws.route53:
