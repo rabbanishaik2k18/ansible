@@ -31,4 +31,5 @@
 
   - name: print the result
     ansible.builtin.debug:
-      msg: "ec2_info.result "
+      msg: "{{ ec2_info }}"
+    
