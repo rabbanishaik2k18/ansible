@@ -4,7 +4,7 @@ regions:
 
 filters:
   tag:Name: nginx
-  instance-state-name: running
+  instance-state-name : running
 
 hostnames: 
   - private-ip-address
